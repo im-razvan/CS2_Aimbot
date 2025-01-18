@@ -2,12 +2,12 @@
 
 External CS2 Aimbot with dynamic hitboxes using bone positions. Made in C++.
 
-# Features
+# Adjustable Features
 
 - Dynamic hitbox
-- Adjustable aim radius
+- Aim radius
 - Team check
 
 ## How to run
 
-You need to generate the build files using CMake and compile them.
+You need to generate the build files using CMake, compile them & inject the resulting DLL into a trusted process.

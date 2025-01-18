@@ -40,7 +40,7 @@ bool WorldToScreen(float Matrix[4][4], const Vec3 worldPos, Vec2& screenPos)
 	float SightX = screenSize.x / 2, SightY = screenSize.y / 2;
  
 	View = Matrix[3][0] * worldPos.x + Matrix[3][1] * worldPos.y + Matrix[3][2] * worldPos.z + Matrix[3][3];
-	
+
 	if (View <= 0.01)
 		return false;
  

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project(DynamicAimbot)
+project(CS2Aimbot)
 
 if(NOT WIN32)
     message(FATAL_ERROR "This project is designed to work only on Windows systems")
@@ -11,4 +11,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 file(GLOB SOURCE CONFIGURE_DEPENDS "*.h" "*.cpp")
 
-add_executable(DynamicAimbot ${SOURCE})
+add_library(CS2Aimbot SHARED ${SOURCE})

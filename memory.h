@@ -1,5 +1,4 @@
 // from cazz's GitHub, a bit modified
-// works well for a demo
 
 #pragma once
 #define WIN32_LEAN_AND_MEAN
@@ -32,8 +31,8 @@ public:
             {
                 processId = entry.th32ProcessID;
 
-                // should hijack the handle instead
-                processHandle = ::OpenProcess(PROCESS_ALL_ACCESS, FALSE, processId);
+                // PROCESS_VM_READ is enough for this 
+                processHandle = ::OpenProcess(PROCESS_VM_READ, FALSE, processId);
                 processFound = true;
                 break;
             }
