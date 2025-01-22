@@ -2,6 +2,8 @@
 
 External CS2 Aimbot with dynamic hitboxes using bone positions. Made in C++.
 
+[!] Best working on default sensivity.
+
 # Adjustable Features
 
 - Dynamic hitbox
